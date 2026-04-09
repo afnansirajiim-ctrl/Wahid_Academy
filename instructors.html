@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instructors - Wahid Academy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Wahid Academy</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link home">Home</a></li>
+    <li><a href="courses.html" class="nav-link courses">Courses</a></li>
+    <li><a href="instructors.html" class="nav-link instructors">Instructors</a></li>
+    <li><a href="about.html" class="nav-link about">About</a></li>
+    <li><a href="contact.html" class="nav-link contact">Contact</a></li>
+  </ul>
+
+  <button class="admin-btn">Admin</button>
+    <button id="darkToggle" class="dark-btn">🌙</button>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>Our Instructors</h1>
+  <p>مدرسونا</p>
+  <div class="about-divider">──────── ◆◆ ────────</div>
+</section>
+
+<section class="instructors-section">
+
+  <div class="instructors-grid">
+
+    <div class="instructor-card">
+<img src="images/khalid.jpeg">
+      <h3>Shaik Mohammad khalid</h3>
+      <p>Academic Director, Wahid Academy</p>
+    </div>
+
+    <div class="instructor-card">
+<img src="images/afnan.jpeg">
+      <h3>Afnan Siraj</h3>
+      <p>Lecturer, Islamic Finance and English literature</p>
+    </div>
+
+    <div class="instructor-card">
+      <img src="images/sabir.jpeg">
+      <h3>Sabir Ahmed</h3>
+      <p> Lecturer, Aqeeda and tafseer</p>
+    </div>
+<div class="instructor-card">
+      <img src="images/abid.jpeg">
+      <h3>Abid Ansari</h3>
+      <p> Lecturer, Urdu literature</p>
+    </div>
+
+
+<div class="instructor-card">
+      <img src="images/wahida.png">
+      <h3> Muallima Sabiha Wahid</h3>
+      <p> Female Lecturer, Islamic Studies and Arabic Literature</p>
+    </div>
+
+
+
+  </div>
+
+</section>
+<div class="join-lecturer">
+  <p class="join-text">
+    Passionate about teaching? Join our team of instructors.
+  </p>
+
+  <a href="https://forms.gle/RiRn2V5D56Ga1NVm8" target="_blank" class="join-btn">
+    📩 Join as Lecturer
+  </a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Wahid Academy</h3>
+      <p>
+        Dedicated to teaching Arabic language, Quran recitation,
+        and Islamic studies with excellence and passion.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Instructors</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li>Beginner Arabic</li>
+        <li>Intermediate Arabic</li>
+        <li>Advanced Arabic</li>
+        <li>Quran Recitation</li>
+        <li>Islamic Studies</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2024 Wahid Academy. All rights reserved.
+  </div>
+
+</footer>
+
+.instructor-card {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.instructor-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
+</body>
+</html>

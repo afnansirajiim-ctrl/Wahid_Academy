@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses - Wahid Academy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Wahid Academy</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link home">Home</a></li>
+    <li><a href="courses.html" class="nav-link courses active">Courses</a></li>
+    <li><a href="instructors.html" class="nav-link instructors">Instructors</a></li>
+    <li><a href="about.html" class="nav-link about">About</a></li>
+    <li><a href="contact.html" class="nav-link contact">Contact</a></li>
+  </ul>
+
+  <button class="admin-btn">Admin</button>
+  <button id="darkToggle" class="dark-btn">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>Our Courses</h1>
+  <p>دوراتنا التعليمية</p>
+  <div class="about-divider">──────── ◆ ◆ ────────</div>
+</section>
+
+<section class="courses-section">
+
+  <h2 class="section-title">Featured Courses</h2>
+  <p class="arabic-title">الدورات المميزة</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+      <img src="images/quran.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/hadees.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/tajweed.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/arabic.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/tafseer.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/urdu.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/quranic.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="images/english.png">
+      <a href="https://forms.gle/CHpMtpKYuFc5ah2k8" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Wahid Academy</h3>
+      <p>
+        Dedicated to teaching Arabic language, Quran recitation,
+        and Islamic studies with excellence and passion.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li>Beginner Arabic</li>
+        <li>Intermediate Arabic</li>
+        <li>Advanced Arabic</li>
+        <li>Quran Recitation</li>
+        <li>Islamic Studies</li>
+        <li>Urdu Literature</li>
+        <li>Hadees</li>
+        <li>Advanced Tafseer</li>
+        <li>Exclusive Tajweed</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2024 Wahid Academy. All rights reserved.
+  </div>
+
+</footer>
+
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
+
+</body>
+</html>
