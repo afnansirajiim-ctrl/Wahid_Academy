@@ -570,3 +570,85 @@ body.dark .join-btn {
   background: #caa64b;
   color: #000;
 }
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* ABOUT SECTION */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 40px 20px;
+  }
+
+  /* EDUCATION / CARDS */
+  .education-item {
+    padding-left: 15px;
+  }
+
+  /* BUTTON */
+  .about-text button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* STATS SECTION */
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  /* CARDS (Mission, Courses etc) */
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 16px;
+}
