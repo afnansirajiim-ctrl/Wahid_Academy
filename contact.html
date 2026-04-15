@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Wahid Academy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Wahid Academy</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link home">Home</a></li>
+    <li><a href="courses.html" class="nav-link courses">Courses</a></li>
+    <li><a href="instructors.html" class="nav-link instructors">Instructors</a></li>
+    <li><a href="about.html" class="nav-link about">About</a></li>
+    <li><a href="contact.html" class="nav-link contact">Contact</a></li>
+  </ul>
+
+  <button class="admin-btn">Admin</button>
+    <button id="darkToggle" class="dark-btn">🌙</button>
+
+</nav>
+<section class="about-hero center">
+  <h1>Contact Us</h1>
+  <p>تواصل معنا</p>
+  <div class="about-divider">──────── ◆◆ ────────</div>
+</section>
+
+<section class="contact-wrapper">
+
+  <div class="contact-container">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>
+        We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+      </p>
+
+      <p class="arabic-small">
+        يسعدنا سماعك. أرسل لنا رسالة وسنرد في أقرب وقت ممكن.
+      </p>
+
+      <div class="contact-item">
+        📧 <strong>Email:</strong><br>
+        wahid.academy1@gmail.com
+      </div>
+
+      <div class="contact-item">
+        📞 <strong>Phone:</strong><br>
+        +91 8712191615
+      </div>
+
+      <div class="contact-item">
+        📍 <strong>Location:</strong><br>
+        World Campus Global Headquarters at Al Jamia Al Islamiya, Malappuram, Kerala
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-form">
+
+      <h3>Send a Message</h3>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+
+        <textarea placeholder="Your Message..." rows="5"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+</section>
+
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
+
+
+</body>
+</html>
