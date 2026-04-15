@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instructors - Wahid Academy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Wahid Academy</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="instructors.html" class="active">Instructors</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <button class="admin-btn">Admin</button>
+  <button id="darkToggle" class="dark-btn">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>Our Instructors</h1>
+  <p>مدرسونا</p>
+  <div class="about-divider">──────── ◆◆ ────────</div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="instructors-section">
+
+  <div class="instructors-grid">
+
+    <div class="instructor-card">
+      <img src="images/khalid.jpeg" alt="Khalid">
+      <h3>Shaik Mohammad Khalid</h3>
+      <p>Academic Director, Wahid Academy</p>
+    </div>
+
+    <div class="instructor-card">
+      <img src="images/sabir.jpeg" alt="Sabir">
+      <h3>Sabir Ahmed</h3>
+      <p>Lecturer, Aqeeda and Tafseer</p>
+    </div>
+
+    <div class="instructor-card">
+      <img src="images/abid.jpeg" alt="Abid">
+      <h3>Abid Ansari</h3>
+      <p>Lecturer, Urdu Literature</p>
+    </div>
+
+    <div class="instructor-card">
+      <img src="images/wahida.png" alt="Sabiha Wahid">
+      <h3>Muallima Sabiha Wahid</h3>
+      <p>Female Lecturer, Islamic Studies and Arabic Literature</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- JOIN SECTION -->
+<section class="join-lecturer">
+  <p class="join-text">
+    Passionate about teaching? Join our team of instructors.
+  </p>
+
+  <a href="https://forms.gle/RiRn2V5D56Ga1NVm8" target="_blank" class="join-btn">
+    📩 Join as Lecturer
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Wahid Academy</h3>
+      <p>
+        Dedicated to teaching Arabic language, Quran recitation,
+        and Islamic studies with excellence and passion.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li>Beginner Arabic</li>
+        <li>Intermediate Arabic</li>
+        <li>Advanced Arabic</li>
+        <li>Quran Recitation</li>
+        <li>Islamic Studies</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2024 Wahid Academy. All rights reserved.
+  </div>
+
+</footer>
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  // Load saved mode when page opens
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark");
+  }
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    // Save mode
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+</script>
+
+</body>
+</html>
